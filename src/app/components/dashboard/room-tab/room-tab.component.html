@@ -1,0 +1,16 @@
+<div style="margin: 0 2vw;">
+    <mat-tab-group>
+        <mat-tab label="GM Rooms">
+            <div>
+                <h4>GM Rooms</h4>
+                <app-rooms [AreMyRooms]='true'></app-rooms>
+            </div>
+        </mat-tab>
+        <mat-tab label="Player Rooms">
+            <div>
+                <h4>Player Rooms</h4>
+                <app-rooms [AreMyRooms]='false'></app-rooms>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

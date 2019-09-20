@@ -1,0 +1,25 @@
+<div style='margin-left: 50px;'>
+    <div style='display:flex; flex-direction: row'>
+        <div style='border: 1px solid white; width: 100px;'>
+            image
+        </div>
+        <div style='border: 1px solid white; width: 200px;'>
+            <h2>{{ characterInfo.FirstName }} {{ characterInfo.LastName }}</h2>
+            <p>Gender: {{ characterGender }}</p>
+            <p>Height: {{ characterHeight }}</p>
+            <p>Weight: {{ characterInfo.WeightInPounds }} lbs</p>
+        </div>
+        <div style='border: 1px solid white; width: 200px;'>
+            <p>Personality: {{ characterInfo.PersonalityTraits }}</p>
+            <p>Ideals: {{ characterInfo.Ideals }}</p>
+            <p>Bonds: {{ characterInfo.Bonds }}</p>
+            <p>Flaws: {{ characterInfo.Flaws }}</p>
+        </div>
+    </div>
+    <div>
+        <p>Visual Description: {{ characterInfo.VisualDescription }}</p>
+        <p>Background Description: {{ characterInfo.BackgroundDescription }}</p>
+        <p>Personal Notes: {{ characterInfo.CharacterNotes }}</p>
+        <p>Date of Creation: {{ characterInfo.DateOfCreation }} || Date Modified: {{ characterInfo.DateOfModification}}</p>
+    </div>
+</div>

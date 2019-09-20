@@ -1,0 +1,17 @@
+.register{
+    position: absolute;
+    z-index: 10;
+    background: rgba(94, 94, 94, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100vw;
+}
+.register form{
+    background: grey;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 300px;
+    margin:auto auto;
+    margin-top: 10em;
+    text-align: center;
+}

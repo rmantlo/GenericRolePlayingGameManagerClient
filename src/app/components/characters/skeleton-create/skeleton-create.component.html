@@ -1,0 +1,76 @@
+<div class='createModal'>
+    <div class='modalContent'>
+        <button (click)='closeToggle()'>Close</button>
+        <form (ngSubmit)='onSubmit()' [formGroup]='skeletonGroup'>
+            <div>
+                <div>
+                    <mat-form-field>
+                        <input matInput placeholder='character first name' formControlName='FirstName' type='text' />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <input matInput placeholder='character last name' formControlName='LastName' type='text' />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Gender</mat-label>
+                        <mat-select formControlName='Gender'>
+                            <mat-option *ngFor='let gen of genders' [value]='gen.value'>
+                                {{gen.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <textarea matInput placeholder='character visual description'
+                            formControlName='VisualDescription' type='text'></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <input matInput placeholder='character height' formControlName='HeightInInches' type='number' />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <input matInput placeholder='character weight' formControlName='WeightInPounds' type='number' />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <textarea matInput
+                            placeholder='character background information (different from background characteristic)'
+                            formControlName='BackgroundDescription' type='text'></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <textarea matInput placeholder='character personality' formControlName='PersonalityTraits'
+                            type='text'></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <textarea matInput placeholder='character ideals' formControlName='Ideals'
+                            type='text'></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <textarea matInput placeholder='character bonds' formControlName='Bonds' type='text'></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <textarea matInput placeholder='character flaws' formControlName='Flaws' type='text'></textarea>
+                    </mat-form-field>
+                </div>
+                <p style='color:red' *ngFor='let i of createError'>{{ i }}</p>
+            </div>
+            <button mat-button color='primary' type='submit'>Create</button>
+        </form>
+    </div>
+</div>

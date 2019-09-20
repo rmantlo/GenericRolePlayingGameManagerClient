@@ -1,0 +1,17 @@
+<div style="margin: 0 2vw;">
+    <mat-tab-group>
+        <mat-tab label="Characters Instances">
+            <div>
+                <h4>Character Instances</h4>
+                <app-characters [AreSkeletons]='false'></app-characters>
+            </div>
+        </mat-tab>
+        <mat-tab label="Characters Skeletons">
+            <div>
+                <h4>Character Outlines</h4>
+                <a (click)='createModelToggle()' >Create new Outline</a>
+                <app-characters [AreSkeletons]='true'></app-characters>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

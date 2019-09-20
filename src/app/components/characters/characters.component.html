@@ -1,0 +1,9 @@
+<div>
+    <div *ngIf="!isResults">
+        <p>{{ message }}</p>
+    </div>
+    <div *ngFor='let chars of characters' style='border: 1px solid white'>
+        <p>{{ chars.FirstName }} {{ chars.LastName}}</p>
+        <a href='character-details/{{charType}}/{{ chars.ID }}'>See More >></a>
+    </div>
+</div>

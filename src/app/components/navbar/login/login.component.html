@@ -1,0 +1,20 @@
+<div class='login'>
+    <form (ngSubmit)='onSubmit()' [formGroup]='loginGroup'>
+        <button style='float:right' (click)='loginToggle()'>Close</button>
+        <h4>Login</h4>
+        <div>
+            <div>
+                <mat-form-field>
+                    <input matInput placeholder="Username" formControlName='Username' type='text' required />
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <input matInput placeholder="Password" formControlName='Password' type='password' required />
+                </mat-form-field>
+            </div>
+            <p style='color:red' *ngIf='loginError'>{{ loginError }}</p>
+        </div>
+        <button mat-button color='primary' type='submit'>Login</button>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+.dashboard{
+    margin:0 3vw;
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 700px){
+    .dashboard{
+        flex-direction: column;
+    }
+    #dashLeft{
+        margin: auto auto;
+    }
+}
+#dashLeft{
+    border: 1px solid white;
+    width: 300px;
+}
+
+#dashRight{
+    border: 1px solid white;
+    width: 100%;
+}
+.mat-tab-group {
+    margin-bottom: 48px;
+  }

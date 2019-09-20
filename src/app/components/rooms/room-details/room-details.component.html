@@ -1,0 +1,33 @@
+<div>
+    <!--as Player in room-->
+    <div id="room">
+        <section id='roomMain'>
+            <div id='roomInfo'>
+                <div></div>
+                <section>
+                    <p>Room Name -- Game Type</p>
+                    <p>GM Username</p>
+                </section>
+            </div>
+            <div>
+                player character info, etc
+            </div>
+        </section>
+        <section id='roomSecondary'>
+            <div>
+                list of tabs with player usernames and their character names showing, on hover shows more details
+            </div>
+            <div>
+                chats
+            </div>
+            <div>
+                inventory, on hover (or click) shows item details
+            </div>
+        </section>
+        <section id='roomTools'>
+            <div id='dice' (mouseenter)='dicePopup=true' (mouseleave)='dicePopup=false'>
+                <app-dice id='dicePopup' *ngIf='dicePopup'></app-dice>
+            </div>
+        </section>
+    </div>
+</div>

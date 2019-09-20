@@ -1,0 +1,17 @@
+.login{
+    position: absolute;
+    z-index: 10;
+    background: rgba(68, 68, 68, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100vw;
+}
+.login form{
+    background: grey;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 300px;
+    margin:auto auto;
+    margin-top: 10em;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<div class='dashboard'>
+    <div id='dashLeft'>
+        <app-player-profile></app-player-profile>
+        <div style='border: 1px solid white; height: 200px;'>
+            <p>spare box</p>
+        </div>
+    </div>
+    <div id='dashRight'>
+        <mat-tab-group>
+            <mat-tab label="Characters">
+                <app-character-tab></app-character-tab>
+            </mat-tab>
+            <mat-tab label="Game Rooms">
+                <app-room-tab></app-room-tab>
+            </mat-tab>
+            <mat-tab label="My Characteristics">
+                <app-characteristics-tab></app-characteristics-tab>
+            </mat-tab>
+            <mat-tab label="My Items">
+                <app-item-tab></app-item-tab>
+            </mat-tab>
+            <mat-tab label="My Monsters">
+                Monsters
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
+
+<app-skeleton-create *ngIf='createModel' (closeModalToggle)='createModelToggle()' ></app-skeleton-create>

@@ -1,0 +1,16 @@
+<mat-toolbar color='primary'>
+    <div><a routerLink='' >LOGO</a></div>
+    <div style='margin-left: 10px'>
+        <a href='/dashboard'>Dashboard</a>
+    </div>
+    <div style='flex: 1 1 auto'></div>
+    <div>
+        <button *ngIf='!IsLoggedIn' mat-flat-button (click)='toggleRegister()'>Register</button>
+        <button *ngIf='!IsLoggedIn' mat-flat-button (click)='toggleLogin()'>Login</button>
+        <button *ngIf='IsLoggedIn' mat-button (click)='logOff()'>Log Off</button>
+    </div>
+</mat-toolbar>
+
+<app-register *ngIf='register' (onRegisterToggle)='toggleRegister()'></app-register>
+<app-login *ngIf='login' (onLoginToggle)='toggleLogin()'></app-login>
+<!-- <app-sidebar *ngIf='IsLoggedIn'></app-sidebar> -->
