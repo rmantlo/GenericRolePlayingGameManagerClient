@@ -1,7 +1,7 @@
 <mat-toolbar color='primary'>
     <div><a routerLink='' >LOGO</a></div>
     <div style='margin-left: 10px'>
-        <a href='/dashboard'>Dashboard</a>
+        <a *ngIf='IsLoggedIn' href='/dashboard'>Dashboard</a>
     </div>
     <div style='flex: 1 1 auto'></div>
     <div>

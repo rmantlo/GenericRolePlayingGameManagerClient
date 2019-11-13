@@ -1,8 +1,9 @@
 @import '../node_modules/@angular/material/prebuilt-themes/purple-green.css';
 body {
-    background: rgb(41, 41, 41);
+    /* background: rgb(41, 41, 41); */
+    background: rgb(180, 180, 180);
     margin: 0;
-    color: white;
+    /* color: white; */
 }
 .mat-form-field-infix{
     width: auto !important;
